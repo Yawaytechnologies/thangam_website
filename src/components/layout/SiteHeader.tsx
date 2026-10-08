@@ -10,9 +10,15 @@ export function SiteHeader({ onPlanVisit: plan }: { onPlanVisit: () => void }) {
   const location = useLocation();
   const portfolioActive = location.pathname.startsWith('/portfolio');
   const closeMenus = () => { setMobile(false); setPortfolioOpen(false); };
-  const renderLink = (item: typeof navigation[number]) => item.href.startsWith('/')
-    ? <Link key={item.label} className={location.pathname === item.href ? 'active' : ''} aria-current={location.pathname === item.href ? 'page' : undefined} to={item.href} onClick={closeMenus}>{item.label}</Link>
-    : <a key={item.label} className={location.pathname === '/' && location.hash === item.href ? 'active' : ''} href={`/${item.href}`} onClick={closeMenus}>{item.label}</a>;
+  const renderLink = (item: typeof navigation[number]) => {
+    if (item.href.startsWith('http')) {
+      return <a key={item.label} href={item.href} onClick={closeMenus}>{item.label}</a>;
+    }
+
+    return item.href.startsWith('/')
+      ? <Link key={item.label} className={location.pathname === item.href ? 'active' : ''} aria-current={location.pathname === item.href ? 'page' : undefined} to={item.href} onClick={closeMenus}>{item.label}</Link>
+      : <a key={item.label} className={location.pathname === '/' && location.hash === item.href ? 'active' : ''} href={`/${item.href}`} onClick={closeMenus}>{item.label}</a>;
+  };
   return (<> <a className="skip-link" href="#main">Skip to content</a>
     <header className="site-header">
       <Brand/>

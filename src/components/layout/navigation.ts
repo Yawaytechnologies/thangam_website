@@ -7,7 +7,7 @@ export const navigation: NavItem[] = [
   { label: 'About Us', href: '/about' },
   { label: 'Leaders', href: '/leaders' },
   { label: 'Contact', href: '/contact' },
-  { label: 'Login', href: '/login' },
+  { label: 'Login', href: 'https://thangam-frontend.onrender.com' },
 ];
 
 export const portfolioItems: NavItem[] = [

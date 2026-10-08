@@ -14,6 +14,10 @@ describe('navigation links', () => {
     expect(navigation.find((item) => item.label === 'Contact')?.href).toBe('/contact');
   });
 
+  it('navigates login to the deployed frontend', () => {
+    expect(navigation.find((item) => item.label === 'Login')?.href).toBe('https://thangam-frontend.onrender.com');
+  });
+
   it('shows Portfolio categories only inside the dropdown', () => {
     expect(navigation.map((item) => item.label)).toEqual(['About Us', 'Leaders', 'Contact', 'Login']);
     expect(portfolioItems).toEqual([
