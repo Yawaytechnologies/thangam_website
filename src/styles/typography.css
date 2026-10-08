@@ -1,0 +1,133 @@
+/* Shared SaaS-style typography scale. Layout and brand colours live in styles.css. */
+.video-caption-shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgb(10 28 21 / 78%), rgb(10 28 21 / 40%) 55%, rgb(10 28 21 / 8%));
+  pointer-events: none;
+}
+.video-caption {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 48px 6.7% 72px;
+  color: #fff;
+}
+.video-caption-label { font-size: 12px; font-weight: 600; letter-spacing: 0.16em; margin-bottom: 22px; color: #e8e6ce; }
+.video-caption h1 { font-size: clamp(2rem, 4.8vw, 4.25rem); line-height: 1.12; letter-spacing: -0.045em; max-width: 850px; }
+.video-caption h1 span { color: #e1e5bb; }
+.video-caption-description { font-size: clamp(0.9375rem, 1.3vw, 1.0625rem); line-height: 1.8; color: #f0f2e9; margin: 24px 0 28px; max-width: 560px; }
+@media (max-width: 700px) {
+  .video-caption { padding: 36px 7% 72px; }
+  .video-caption-label { font-size: 10px; margin-bottom: 18px; }
+  .video-caption-description br { display: none; }
+}
+:root {
+  --type-body: 1rem;
+  --type-small: 0.875rem;
+  --type-caption: 0.75rem;
+  --type-heading: clamp(2rem, 3.5vw, 3rem);
+  font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .property-card h3, .image-caption {
+  font-family: inherit;
+  font-weight: 650;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: clamp(2.625rem, 6vw, 4.75rem);
+  line-height: 1.08;
+  letter-spacing: -0.055em;
+  font-weight: 700;
+}
+
+h2, .values-copy h2, .contact h2 {
+  font-size: var(--type-heading);
+  line-height: 1.18;
+  letter-spacing: -0.04em;
+}
+
+h1 em, h2 em, .image-caption em {
+  font-style: normal;
+  font-weight: inherit;
+}
+
+.brand > span { font-family: inherit; font-size: 0.9375rem; font-weight: 700; letter-spacing: 0.045em; }
+.brand-sub { font-family: inherit; font-size: 0.625rem; font-weight: 500; letter-spacing: 0.14em; }
+.announcement { font-size: var(--type-caption); }
+nav a { font-size: var(--type-small); font-weight: 500; }
+.button, .header-cta { font-size: var(--type-small); font-weight: 600; line-height: 1.4; }
+.eyebrow { font-size: var(--type-caption); font-weight: 650; letter-spacing: 0.12em; line-height: 1.5; }
+.hero-content p { font-size: clamp(1rem, 1.4vw, 1.125rem); line-height: 1.75; }
+.hero-side { font-size: 0.625rem; letter-spacing: 0.16em; }
+.hero-bottom { font-size: var(--type-caption); }
+.hero-bottom > span:last-child { font-size: 0.625rem; }
+.hero-video-control { font-size: var(--type-caption); font-weight: 500; }
+.search-intro { font-size: var(--type-small); line-height: 1.6; }
+.search-intro strong { font-weight: 600; }
+.search-panel label { font-size: 0.6875rem; letter-spacing: 0.07em; font-weight: 600; }
+.search-panel select { font-size: var(--type-small); line-height: 1.5; }
+
+.intro-copy p, .values-copy > p, .leaders > p, .faq > div > p,
+.faq-item p, .contact p, .dialog-content p {
+  font-size: var(--type-body);
+  line-height: 1.75;
+}
+
+.text-link { font-size: var(--type-small); font-weight: 600; }
+.property-toolbar { font-size: 0.6875rem; letter-spacing: 0.08em; }
+.property-toolbar > span:last-child, .property-meta, .property-tag { font-size: var(--type-caption); }
+.property-meta { flex-wrap: wrap; row-gap: 6px; }
+.property-meta > span { font-size: 0.625rem; letter-spacing: 0.05em; }
+.property-card h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); letter-spacing: -0.025em; line-height: 1.3; }
+.property-card > p, .property-footer { font-size: var(--type-small); line-height: 1.6; }
+.property-footer { gap: 10px; flex-wrap: wrap; }
+.property-footer small, .property-footer button { font-size: var(--type-caption); }
+.property-footer button { font-weight: 600; }
+.sample-note, .dialog-content .sample-note { font-size: var(--type-caption); line-height: 1.7; }
+.image-caption { font-size: clamp(1.625rem, 3vw, 2.25rem); letter-spacing: -0.035em; }
+.value h3 { font-size: var(--type-body); font-weight: 600; }
+.value p { font-size: var(--type-small); line-height: 1.75; }
+.faq-item h3 button { font-size: var(--type-body); font-weight: 550; line-height: 1.5; }
+.footer-top p, .footer-top > div { font-size: var(--type-small); }
+.footer-top > div { flex-wrap: wrap; justify-content: flex-end; row-gap: 12px; }
+.footer-bottom { font-size: var(--type-caption); gap: 16px; line-height: 1.6; }
+.dialog-content h2 { font-size: clamp(1.625rem, 3vw, 2rem); }
+.enquiry-form label { font-size: var(--type-small); font-weight: 500; }
+.enquiry-form input, .enquiry-form select { font-size: 1rem; font-weight: 400; }
+.enquiry-form .consent { font-size: var(--type-caption); line-height: 1.6; }
+.empty-state h3 { font-size: 1.125rem; }
+.empty-state p { font-size: var(--type-small); }
+
+@media (max-width: 1250px) {
+  .header-cta { display: none; }
+}
+
+@media (max-width: 900px) {
+  .search-panel { flex-wrap: wrap; }
+  .search-panel > .button { width: 100%; }
+  .search-panel label { min-width: 0; }
+  .contact { flex-wrap: wrap; gap: 28px; }
+  .footer-top { flex-wrap: wrap; }
+}
+
+@media (max-width: 700px) {
+  :root { --type-body: 0.9375rem; }
+  .brand > span { font-size: 0.8125rem; }
+  .brand-sub { font-size: 0.5625rem; }
+  .announcement { height: auto; min-height: 32px; padding-block: 6px; font-size: 0.625rem; text-align: center; }
+  .hero-content { right: 7%; }
+  .hero-bottom { font-size: 0.6875rem; }
+  .search-panel label { flex-basis: 100%; font-size: 0.6875rem; }
+  .search-panel select { width: 100%; font-size: 1rem; }
+  .property-card h3 { font-size: 1.5rem; }
+  .footer-top > div { justify-content: flex-start; }
+  .footer-bottom { gap: 8px; }
+}

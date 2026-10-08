@@ -1,0 +1,73 @@
+.leaders-page { background: #f7f3e4; color: #20241f; }
+.leaders-hero { position: relative; min-height: 500px; display: flex; align-items: flex-end; overflow: hidden; background: #30291f; }
+.leaders-hero-image { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 46%; }
+.leaders-hero-shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgb(31 26 20 / 72%), rgb(40 32 22 / 30%) 72%), linear-gradient(0deg, rgb(25 22 18 / 38%), transparent 60%); }
+.leaders-hero-copy { position: relative; z-index: 1; width: min(1240px, 88%); margin: 0 auto; padding: 0 0 66px; color: #fff; }
+.leaders-hero-copy > span, .leaders-kicker { color: #a98539; font-size: 10px; font-weight: 700; letter-spacing: 1.7px; }
+.leaders-hero-copy > span { color: #f2d680; }
+.leaders-hero-copy h1 { margin: 13px 0 20px; font-family: Georgia, serif; font-size: 84px; font-weight: 400; line-height: .95; letter-spacing: 0; text-transform: uppercase; }
+.leaders-hero-copy i { display: block; width: 54px; height: 3px; background: #d0a820; }
+.leaders-intro { background: #f2e8c5; }
+.leaders-intro-inner { width: min(1240px, 88%); margin: 0 auto; padding: 66px 0 72px; }
+.leaders-intro .leaders-kicker { margin: 0 0 12px; }
+.leaders-intro h2 { margin: 0; color: #763b38; font-family: Georgia, serif; font-size: 48px; font-weight: 700; line-height: 1.13; letter-spacing: 0; text-transform: uppercase; }
+.leaders-intro blockquote { max-width: 1120px; margin: 25px 0 0; color: #804542; font-size: 21px; font-weight: 650; line-height: 1.8; }
+.chairman-section { padding: 64px 6%; background: #111a2d; color: #fff; }
+.chairman-inner { width: min(1080px, 100%); margin: 0 auto; display: grid; grid-template-columns: minmax(260px, .78fr) minmax(0, 1fr); align-items: center; gap: clamp(40px, 8vw, 100px); }
+.chairman-photo-wrap { position: relative; max-width: 400px; justify-self: center; }
+.chairman-photo { width: 100%; aspect-ratio: 853 / 1280; object-fit: cover; object-position: center top; }
+.chairman-photo-caption { position: absolute; bottom: 0; left: 0; padding: 10px 15px; background: #d0a820; color: #182018; font-size: 10px; font-weight: 750; letter-spacing: 1.4px; }
+.chairman-copy .leaders-kicker { margin: 0 0 18px; color: #d5b957; }
+.chairman-role { display: inline-block; margin-bottom: 10px; color: #d5b957; font-size: 10px; font-weight: 700; letter-spacing: 1.4px; }
+.chairman-copy h2 { margin: 0; color: #fff; font-family: Georgia, serif; font-size: 48px; font-weight: 500; line-height: 1.1; letter-spacing: 0; text-transform: uppercase; }
+.chairman-copy blockquote { margin: 23px 0; color: #d7d9d8; font-size: 16px; line-height: 1.8; }
+.chairman-email { display: inline-flex; align-items: center; gap: 9px; color: #edcf6a; font-size: 13px; overflow-wrap: anywhere; }
+.chairman-email:hover { color: #fff0ad; }
+.directors-section { width: min(1240px, 88%); margin: 0 auto; padding: 78px 0 88px; }
+.directors-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 40px; margin-bottom: 28px; }
+.directors-heading .leaders-kicker { margin: 0 0 9px; }
+.directors-heading h2 { margin: 0; color: #263b30; font-family: Georgia, serif; font-size: 48px; font-weight: 500; line-height: 1.1; letter-spacing: 0; }
+.directors-heading > p { max-width: 350px; margin: 0 0 5px; color: #72786f; font-size: 14px; line-height: 1.7; }
+.directors-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid #d8d2bf; border-left: 1px solid #d8d2bf; }
+.director-profile { min-width: 0; min-height: 126px; position: relative; display: flex; align-items: center; gap: 16px; padding: 19px; border-right: 1px solid #d8d2bf; border-bottom: 1px solid #d8d2bf; background: rgb(255 255 255 / 46%); }
+.director-monogram { width: 54px; height: 54px; flex: 0 0 auto; display: grid; place-items: center; border: 1px solid #d7c88f; border-radius: 50%; background: #f1e8c7; color: #6f5741; font-family: Georgia, serif; font-size: 16px; font-weight: 700; }
+.director-monogram.tone-1 { background: #e2e9df; border-color: #cad5c6; color: #425c47; }
+.director-monogram.tone-2 { background: #eee1d7; border-color: #dfcabc; color: #825748; }
+.director-monogram.tone-3 { background: #e3e6ed; border-color: #cbd0db; color: #4c566f; }
+.director-monogram.tone-4 { background: #e9e0eb; border-color: #d9c9dd; color: #765e79; }
+.director-profile-copy { min-width: 0; padding-right: 12px; }
+.director-profile-copy p { margin: 0 0 5px; color: #a17c24; font-size: 9px; font-weight: 750; letter-spacing: 1.2px; }
+.director-profile-copy h3 { margin: 0; color: #29362e; font-family: Georgia, serif; font-size: 17px; font-weight: 600; line-height: 1.25; letter-spacing: 0; overflow-wrap: anywhere; }
+.director-index { position: absolute; top: 10px; right: 12px; color: #b9b3a4; font-size: 9px; }
+.leaders-contact-link { display: inline-flex; align-items: center; gap: 10px; margin-top: 28px; padding-bottom: 6px; border-bottom: 1px solid #cbb875; color: #745d21; font-size: 13px; font-weight: 650; }
+.leaders-contact-link:hover { color: #263b30; }
+
+@media (max-width: 800px) {
+  .leaders-hero { min-height: 410px; }
+  .leaders-hero-copy h1 { font-size: 68px; }
+  .leaders-intro h2, .chairman-copy h2, .directors-heading h2 { font-size: 40px; }
+  .leaders-intro blockquote { font-size: 18px; }
+  .chairman-inner { grid-template-columns: minmax(210px, .8fr) minmax(0, 1fr); gap: 32px; }
+  .directors-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .director-profile { padding: 15px; gap: 12px; }
+  .director-monogram { width: 46px; height: 46px; }
+}
+@media (max-width: 600px) {
+  .leaders-hero { min-height: 350px; }
+  .leaders-hero-copy h1 { font-size: 58px; }
+  .leaders-hero-copy { padding-bottom: 42px; }
+  .leaders-intro-inner { padding: 48px 0 50px; }
+  .leaders-intro h2 { font-size: 31px; }
+  .leaders-intro blockquote { margin-top: 18px; font-size: 15px; line-height: 1.75; }
+  .chairman-section { padding: 42px 7%; }
+  .chairman-inner { grid-template-columns: 1fr; gap: 30px; }
+  .chairman-photo-wrap { width: min(100%, 340px); justify-self: start; }
+  .chairman-copy h2 { font-size: 38px; }
+  .chairman-copy blockquote { font-size: 14px; }
+  .directors-section { width: 88%; padding: 52px 0 60px; }
+  .directors-heading { display: block; margin-bottom: 20px; }
+  .directors-heading > p { margin-top: 12px; font-size: 13px; }
+  .directors-heading h2 { font-size: 36px; }
+  .directors-grid { grid-template-columns: 1fr; }
+  .director-profile { min-height: 92px; padding: 13px 16px; }
+}

@@ -1,0 +1,17 @@
+.company-gallery { padding-top: 64px; padding-bottom: 64px; }
+.company-gallery-heading { max-width: 650px; margin-bottom: 28px; }
+.company-gallery-heading > p:last-child { margin-top: 14px; color: var(--brand-muted, #687182); font-size: 15px; line-height: 1.75; }
+.company-gallery-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+.company-gallery-grid--project { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.company-gallery-card { margin: 0; background: #fff; border: 1px solid var(--brand-border, #e8eaf0); border-radius: 18px; overflow: hidden; box-shadow: var(--brand-shadow); }
+.company-gallery-card > a { display: block; position: relative; background: #f0f1f5; }
+.company-gallery-card img { width: 100%; aspect-ratio: 4 / 3; object-fit: contain; }
+.company-gallery-grid--project img { aspect-ratio: 4 / 3; }
+.company-gallery-expand { display: grid; place-items: center; position: absolute; bottom: 12px; right: 12px; width: 34px; height: 34px; border-radius: 50%; color: #10151c; background: var(--brand-gold, #d0a820); }
+.company-gallery-card figcaption { padding: 18px 20px; font-size: 14px; font-weight: 600; line-height: 1.5; }
+.about-story-image--company { background: #f0f1f5; }
+.about-story-image--company > img { object-fit: contain; }
+@media(max-width: 700px) {
+  .company-gallery { padding-top: 42px; padding-bottom: 42px; }
+  .company-gallery-grid, .company-gallery-grid--project { grid-template-columns: 1fr; }
+}
